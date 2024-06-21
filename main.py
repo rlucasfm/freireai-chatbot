@@ -14,7 +14,7 @@ st.title("FreireAI - Eu vou te ajudar a entender o Project Thinking! ")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": """Bem-vindo! Eu sou o FreireAI, um cérebro artificial pronto pra te ajudar a entender um pouco mais sobre o Project Thinking.
-                                     \nSou uma criação da FWK Global. Caso queira saber mais, acesse: https://fwk.global."""}]
+                                     \nSou uma criação da FWK Labs. Caso queira saber mais, acesse: https://fwk.global."""}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
